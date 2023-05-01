@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { ImageRow } from "/Users/selinali/Downloads/pogwebsite/pogapp/pages/components/index";
+import { ImageRow } from "/pogapp/pages/components/index";
 
 const Gallery = () => {
   const [NFTs, setNFTs] = useState([]);
