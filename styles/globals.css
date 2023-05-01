@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 768px) {
+  .image-container {
+    min-width: 25%;
+  }
+}
+
+@font-face {
+  font-family: 'Work_Sans';
+  src: url('/Users/selinali/Downloads/pogwebsite/pogapp/asset/Work_Sans/WorkSans-Light.ttf');
+  font-weight: 400;
+  font-style: normal;
+  }
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 0, 0, 0;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.card {
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 35rem;
+  border-radius: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+}
+.pog {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pog img {
+  width: 15rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle {
+  width: 17.5rem;
+  height: 17.5rem;
+  background: linear-gradient(
+    to right,
+    rgba(127, 255, 88, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
