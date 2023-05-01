@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '/pogapp/asset/POGS_2.png';
+import logo from '../../pogapp/asset/POGS_2.png';
 import classNames from "classnames";
 
 const Welcome = () => {
