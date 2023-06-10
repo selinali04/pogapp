@@ -1,0 +1,1 @@
+A simple gallery of the Pog Punks nft page, as you scroll, the website queries alchemy api for more nfts. Allows users to click on each NFT for additional details, creating a 3D card that moves with the mouse.
